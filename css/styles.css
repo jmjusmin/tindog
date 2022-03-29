@@ -3,17 +3,17 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 h1{
-  size:4rem;
+  font-size: 3.5rem;
   line-height: 1.5;
   font-weight: 900;
 }
 h2{
-  size:3.5rem;
+  font-size:3rem;
   line-height: 1.5;
   font-weight: 900;
 }
 h3{
-  size:1.5rem;
+  font-size:1.5rem;
   font-weight: 900;
 }
 p{
@@ -21,7 +21,7 @@ p{
   padding: 0 10%;
 }
 .container-fluid{
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 #title{
   background-color: #ff4c68;
@@ -52,17 +52,21 @@ p{
 
 /* title img */
 .title-img{
-  width: 50%;
-  margin-left: 100px;
-  transform: rotate(15deg);
+  width: 23%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 23%;
 }
 
 /*feature section*/
 #features{
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
 }
 .feature-col{
   text-align: center;
+  padding: 4.5%;
 }
 /*feature-icon*/
 .feature-icon{
@@ -98,4 +102,14 @@ p{
 .press-logo{
   width: 15%;
   margin: 2px 2px 50px;
+}
+
+/* Pricing section */
+#pricing{
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-col{
+  padding: 3% 2%;
 }
