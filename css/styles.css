@@ -1,19 +1,10 @@
 body{
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
-h1{
-  font-size: 3.5rem;
+h1,h2,h3,h4,h5,h6{
   line-height: 1.5;
-  font-weight: 900;
-}
-h2{
-  font-size:3rem;
-  line-height: 1.5;
-  font-weight: 900;
-}
-h3{
-  font-size:1.5rem;
   font-weight: 900;
 }
 p{
@@ -21,12 +12,17 @@ p{
   padding: 0 10%;
 }
 .container-fluid{
-  padding: 3% 15% 7%;
+  padding: 7% 15%;
 }
-#title{
-  background-color: #ff4c68;
-  color:#fff;
+
+/* Heading */
+.main-heading{
+  font-size: 3.5rem;
 }
+.section-heading{
+  font-size: 3.5rem;
+}
+
 /* nav bar section*/
 .navbar{
   padding: 0 0 4.5rem;
@@ -45,6 +41,16 @@ p{
   font-weight: 400;
 }
 
+/* Title section */
+#title{
+  background-color: #ff4c68;
+  text-align: left;
+  color:#fff;
+}
+#title .container-fluid{
+  padding: 3% 15% 7%;
+}
+
 /* Download btn */
 .download-btn{
   margin: 5% 3% 5%;
@@ -60,15 +66,12 @@ p{
 
 /*feature section*/
 #features{
-  padding: 7% 15%;
   background-color: #fff;
   position: relative;
 }
 .feature-col{
-  text-align: center;
-  padding: 4.5%;
+  padding: 4%;
 }
-/*feature-icon*/
 .feature-icon{
   font-size: 4rem;
   color:#ef8172;
@@ -77,25 +80,26 @@ p{
 .feature-icon:hover{
   color:#ff4c68;
 }
+.feature-text{
+  font-size: 1.5rem;
+}
 
 /* testimonials section */
 #testimonials{
   color: #fff;
-  text-align: center;
   background-color:#ef8172;
-}
-.carousel-item{
-  padding: 7% 15%;
 }
 .testimonials-img{
   width: 10%;
   border-radius: 100%;
   margin: 20px;
 }
+.testimonial-text{
+  font-size: 3rem;
+}
 
 /* press section */
 #press{
-  text-align: center;
   background-color:#ef8172;
   padding-bottom: 3%;
 }
@@ -107,9 +111,37 @@ p{
 /* Pricing section */
 #pricing{
   padding: 100px;
-  text-align: center;
 }
-
 .pricing-col{
   padding: 3% 2%;
+}
+.price-text{
+  font-size: 3rem;
+}
+
+/* Call to action section */
+#cta{
+  background-color: #ff4c68;
+  color: #fff;
+  padding:7% 15%;
+}
+
+/* Footer section */
+#footer{
+  padding:7% 15%;
+}
+.social-icon{
+  padding: 20px 10px;
+}
+
+/* Adjust width */
+@media (max-width:1028px) {
+  #title{
+    text-align: center;
+  }
+  .title-img{
+    width: 60%;
+    position: static;
+    transform: rotate(0);
+  }
 }
